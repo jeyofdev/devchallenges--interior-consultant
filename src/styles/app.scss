@@ -6,7 +6,11 @@
 @import 'core/layout';
 @import 'core/reset';
 
+// custom libraries
+@import 'lib/font-awesome/font-awesome';
+
 // app
 //
 @import 'app/default';
 @import 'app/nav';
+@import 'app/content';

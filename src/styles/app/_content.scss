@@ -1,0 +1,72 @@
+/* ========================
+    HOME INTRO
+======================== */
+.home {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'item-intro';
+  row-gap: 30px;
+  margin-top: rem(38);
+  overflow: hidden;
+
+  @include media-queries-up('lg') {
+    grid-template-columns: 40% 60%;
+    column-gap: 30px;
+    margin-top: rem(170);
+  }
+}
+
+.home .item-intro {
+  @include media-queries-up('lg') {
+    width: 80%;
+    max-width: rem(410);
+  }
+
+  > h1 {
+    font-family: $font-family-headings;
+    color: $content-color;
+    font-size: rem(36);
+    font-style: normal;
+    font-weight: normal;
+    line-height: rem(46);
+  }
+
+  > p {
+    font-family: $font-family-text;
+    color: $content-color;
+    font-size: rem(14);
+    font-style: 300;
+    font-weight: 300;
+    line-height: rem(17);
+    margin: rem(25) 0;
+  }
+
+  > .btn {
+    font-family: $font-family-text;
+    color: $content-color;
+    font-style: normal;
+    font-weight: 600;
+    font-size: rem(14);
+    line-height: rem(17);
+    text-decoration: none;
+
+    .fas {
+      margin-left: rem(15);
+      line-height: rem(17);
+      vertical-align: middle;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* ========================
+    HOME CONTENT
+======================== */
+
+.home .item-content > img {
+  width: 100%;
+  height: auto;
+}
