@@ -9,6 +9,11 @@
   margin-top: rem(38);
   overflow: hidden;
   padding-bottom: 100px;
+  margin-bottom: rem(50);
+
+  @include media-queries-up('md') {
+    margin-bottom: rem(106);
+  }
 
   @include media-queries-up('md') {
     grid-template-columns: 40% 60%;

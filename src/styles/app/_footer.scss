@@ -1,0 +1,23 @@
+/* ========================
+    FOOTER
+======================== */
+footer {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  width: 100%;
+  max-width: 260px;
+  padding-top: rem(10);
+  text-align: center;
+  transform: translateX(-50%);
+  border-top: 1px solid $gray-500;
+}
+
+footer p {
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(14);
+  line-height: rem(17);
+  color: $gray-500;
+}
