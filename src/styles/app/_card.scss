@@ -9,7 +9,7 @@
   max-width: rem(410);
   background: #181719;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 10px 15px 25px 15px;
+  padding: rem(10) rem(15) rem(25) rem(15);
 
   @media screen and (min-width: 390px) {
     width: 80%;
@@ -45,23 +45,20 @@
 }
 
 .home .item-content .card .card-header .content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  @include make-flex(center, null, column);
 
   .card-name {
-    font-family: $font-family-text;
-    font-style: normal;
+    @extend %content;
+
     font-weight: 500;
     font-size: rem(12);
     line-height: rem(15);
-    color: $content-color;
     margin-bottom: rem(4);
   }
 
   .card-job {
-    font-family: $font-family-text;
-    font-style: normal;
+    @extend %content;
+
     font-weight: 500;
     font-size: rem(10);
     line-height: rem(12);
@@ -70,12 +67,11 @@
 }
 
 .home .item-content .card .card-date {
-  font-family: $font-family-headings;
-  font-style: normal;
+  @extend %headings;
+
   font-weight: bold;
   font-size: rem(16);
   line-height: rem(23);
-  color: $content-color;
   margin-top: rem(10);
   max-width: rem(280);
 

@@ -3,3 +3,19 @@
 .container {
   min-height: calc(100vh - 30px);
 }
+
+%content {
+  font-family: $font-family-text;
+  color: $content-color;
+  font-size: rem(14);
+  line-height: rem(17);
+  font-style: normal;
+  font-weight: 300;
+}
+
+%headings {
+  font-family: $font-family-headings;
+  color: $content-color;
+  font-style: normal;
+  font-weight: normal;
+}

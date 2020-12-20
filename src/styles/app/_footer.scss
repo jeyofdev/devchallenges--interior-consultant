@@ -14,10 +14,8 @@ footer {
 }
 
 footer p {
-  font-family: $font-family-text;
-  font-style: normal;
+  @extend %content;
+
   font-weight: 600;
-  font-size: rem(14);
-  line-height: rem(17);
   color: $gray-500;
 }

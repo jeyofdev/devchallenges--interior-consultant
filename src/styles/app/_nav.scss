@@ -2,9 +2,8 @@
     NAV-TOP
 ======================== */
 .nav-top {
-  display: grid;
-  grid-template-columns: 70% 30%;
-  column-gap: rem(15);
+  @include make-css-grid(null, 70% 30%, 0 rem(15));
+
   margin-top: rem(30);
 
   @include media-queries-up('md') {
@@ -92,21 +91,20 @@
   background-color: $dark;
   color: $content-color;
   transition: 0.5s;
+  z-index: 10;
 
   @include media-queries-down(md) {
     &.is-open {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include make-flex(center, center);
+
       width: 100%;
     }
   }
 
   @include media-queries-up('md') {
+    @include make-flex(flex-end, center);
+
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     background: transparent;
     width: 100%;
     height: auto;
@@ -118,9 +116,8 @@
   display: none;
 
   @include media-queries-up('md') {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    @include make-flex(flex-end, center);
+
     margin-right: rem(15);
     width: 100%;
 
@@ -137,12 +134,11 @@
 }
 
 .collapse .navbar-nav .nav-item .nav-link {
-  font-family: $font-family-text;
-  font-style: normal;
+  @extend %content;
+
   font-weight: bold;
   font-size: rem(18);
   line-height: rem(22);
-  color: $content-color;
   text-decoration: none;
 
   @include media-queries-up('md') {
