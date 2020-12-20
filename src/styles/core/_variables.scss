@@ -1,6 +1,19 @@
 // variables
 //
 
+// colors
+$light: #fff !default;
+$dark: #181719 !default;
+
+$body-bg: $dark !default;
+$content-color: $light !default;
+$trigger-line-bg: #f2f2f2 !default;
+
+// Fonts
+$font-family-text: 'Montserrat', sans-serif !default;
+$font-family-headings: 'Lora', serif !default;
+$font-family-logo: 'Crimson Pro', serif !default;
+
 // breakpoints
 //
 $containerbreakpoints: () !default;
@@ -10,6 +23,7 @@ $containerbreakpoints: map-merge(
     'sm': 576px,
     'md': 768px,
     'lg': 992px,
+    'xl': 1200px,
   ),
   $containerbreakpoints
 );
@@ -27,7 +41,8 @@ $containerWidths: map-merge(
   (
     sm: 540px,
     md: 720px,
-    lg: 955px,
+    lg: 960px,
+    xl: 1140px,
   ),
   $containerWidths
 );

@@ -2,6 +2,8 @@
 *:before,
 *:after {
   box-sizing: border-box;
+  outline: none;
+  overflow: hidden;
 }
 
 html,
@@ -109,6 +111,7 @@ section {
 }
 
 body {
+  background-color: $body-bg;
   line-height: 1;
 }
 
