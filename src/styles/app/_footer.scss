@@ -1,0 +1,40 @@
+/* ========================
+    FOOTER
+======================== */
+footer {
+  width: 100%;
+  max-width: 260px;
+  padding-top: rem(10);
+  text-align: center;
+  border-top: 1px solid $gray-500;
+  margin: 0 auto;
+  margin-bottom: rem(24);
+
+  @include media-queries-up('md') {
+    position: absolute;
+    left: 50%;
+    bottom: 24px;
+    transform: translateX(-50%);
+  }
+
+  @media screen and (min-width: 768px) and (max-height: 768px) {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    transform: none;
+  }
+
+  @media screen and (max-width: 768px) and (min-height: 768px) {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+}
+
+footer p {
+  @extend %content;
+
+  font-weight: 600;
+  color: $gray-500;
+}

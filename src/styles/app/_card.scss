@@ -1,0 +1,81 @@
+/* ========================
+    HOME CARD
+======================== */
+.home .item-content .card {
+  position: absolute;
+  right: rem(8);
+  bottom: rem(-80);
+  width: 80%;
+  max-width: rem(410);
+  background: #181719;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: rem(10) rem(15) rem(25) rem(15);
+
+  @media screen and (min-width: 390px) {
+    width: 80%;
+    max-width: rem(410);
+  }
+
+  @media screen and (min-width: 500px) {
+    width: 60%;
+  }
+
+  @include media-queries-up('md') {
+    right: rem(20);
+  }
+
+  @include media-queries-up('xl') {
+    width: 50%;
+  }
+}
+
+.home .item-content .card .card-header {
+  display: flex;
+
+  .card-avatar {
+    right: rem(23);
+    max-width: rem(40);
+    border-radius: 100%;
+    margin-right: rem(10);
+
+    @media screen and (min-width: rem(390)) {
+      max-width: rem(55);
+    }
+  }
+}
+
+.home .item-content .card .card-header .content {
+  @include make-flex(center, null, column);
+
+  .card-name {
+    @extend %content;
+
+    font-weight: 500;
+    font-size: rem(12);
+    line-height: rem(15);
+    margin-bottom: rem(4);
+  }
+
+  .card-job {
+    @extend %content;
+
+    font-weight: 500;
+    font-size: rem(10);
+    line-height: rem(12);
+    color: #828282;
+  }
+}
+
+.home .item-content .card .card-date {
+  @extend %headings;
+
+  font-weight: bold;
+  font-size: rem(16);
+  line-height: rem(23);
+  margin-top: rem(10);
+  max-width: rem(280);
+
+  > span {
+    display: block;
+  }
+}
