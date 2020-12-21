@@ -1,0 +1,50 @@
+// variables
+//
+
+// colors
+$light: #fff !default;
+$dark: #181719 !default;
+$gray-500: #a9a9a9 !default;
+
+$body-bg: $dark !default;
+$content-color: $light !default;
+$trigger-line-bg: #f2f2f2 !default;
+$card-bg: $dark !default;
+
+// Fonts
+$font-family-text: 'Montserrat', sans-serif !default;
+$font-family-headings: 'Lora', serif !default;
+$font-family-logo: 'Crimson Pro', serif !default;
+
+// breakpoints
+//
+$containerbreakpoints: () !default;
+$containerbreakpoints: map-merge(
+  (
+    'xs': 0,
+    'sm': 576px,
+    'md': 768px,
+    'lg': 992px,
+    'xl': 1200px,
+  ),
+  $containerbreakpoints
+);
+
+// containers
+//
+// width of the container padding
+//
+$container-gutter-width: 30px !default;
+
+// widths for each breakpoints
+//
+$containerWidths: () !default;
+$containerWidths: map-merge(
+  (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+  ),
+  $containerWidths
+);

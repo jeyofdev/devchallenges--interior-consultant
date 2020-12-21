@@ -1,2 +1,19 @@
+@import 'app/variables';
+
+// core
+//
+@import 'core/functions';
+@import 'core/mixins';
+@import 'core/layout';
+@import 'core/reset';
+
+// custom libraries
+@import 'lib/font-awesome/font-awesome';
+
 // app
-@import 'app/custom';
+//
+@import 'app/default';
+@import 'app/nav';
+@import 'app/content';
+@import 'app/card';
+@import 'app/footer';
