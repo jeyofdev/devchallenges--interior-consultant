@@ -6,6 +6,14 @@
 
 <div align="center">
   <h3>
+    <a href="https://jeyofdev.github.io/devchallenges--interior-consultant/">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/jeyofdev/devchallenges--interior-consultant">
+      Solution
+    </a>
+    <span> | </span>
     <a href="https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb">
       Challenge
     </a>
@@ -26,7 +34,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://user-images.githubusercontent.com/46073105/102763190-9ed82000-4379-11eb-8e53-f969f145cb12.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
@@ -41,6 +49,7 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [WEBPACK](https://webpack.js.org/)
 
 #### Don't forget to generate the assets :
 
